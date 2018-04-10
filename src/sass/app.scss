@@ -1,0 +1,21 @@
+.app-container{
+    border:1px solid #000;
+    height: 300px;
+    width: 300px;
+    border-radius: 3px;
+    background-color: #ccc;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #000;
+    }
+    &__output{
+        border: 1px solid green;
+        font-size: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
