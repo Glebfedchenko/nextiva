@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Increment, Decrement } from '../actions/index'
 import { Button } from '@nextiva/next-ui';
-
+import Counter from './Counter/index';
 
 class App extends Component {
 
@@ -13,9 +13,7 @@ class App extends Component {
                 <div className="app-container__header">
                     Increment and Decrement
                 </div>
-                <div className="app-container__output">
-                    {counter}
-                </div>
+                <Counter counter={counter}/>
                 <div className="app-container__increment">
                     <Button kind="success" onClick={increment}>Increment</Button>
                 </div>
